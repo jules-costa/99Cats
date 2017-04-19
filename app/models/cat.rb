@@ -7,4 +7,9 @@ class Cat < ApplicationRecord
     (Time.now.to_date.year - self.birth_date.year)
   end
 
+  has_many :cat_rental_requests,
+    primary_key: :id,
+    foreign_key: :cat_id,
+    class_name: "CatRentalRequest"
+
 end
