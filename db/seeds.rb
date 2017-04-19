@@ -10,3 +10,7 @@ cat1 = Cat.create!(birth_date: Date.new(2001, 2, 3), color: "brown", name: "Clyd
 cat2 = Cat.create!(birth_date: Date.new(2002, 2, 3), color: "orange", name: "Bonnie", sex: "F", description: "Likes to nap")
 cat3 = Cat.create!(birth_date: Date.new(2004, 2, 3), color: "grey", name: "Whiskers", sex: "M", description: "Enjoys sun-bathing")
 cat4 = Cat.create!(birth_date: Date.new(2006, 2, 3), color: "white", name: "Star", sex: "F", description: "Loves salmon")
+
+rental1 = CatRentalRequest.create!(cat_id: cat1.id, start_date: Date.new(2017, 4, 1), end_date: Date.new(2017, 4, 4), status: "APPROVED")
+rental2 = CatRentalRequest.create!(cat_id: cat2.id, start_date: Date.new(2017, 4, 2), end_date: Date.new(2017, 4, 4), status: "APPROVED")
+rental3 = CatRentalRequest.create!(cat_id: cat3.id, start_date: Date.new(2017, 4, 1), end_date: Date.new(2017, 4, 4), status: "APPROVED")

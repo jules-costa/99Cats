@@ -16,6 +16,11 @@ class CatRentalRequestsController < ApplicationController
 
   def create
     @cat_rental = CatRentalRequest.new(cat_rental_params)
+    if @cat_rental.save
+      redirect_to cat_url(@cat_rental)
+    else
+      render :show
+    end
   end
 
   private
