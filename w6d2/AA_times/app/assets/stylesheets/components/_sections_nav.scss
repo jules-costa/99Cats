@@ -1,0 +1,27 @@
+.sections {
+  display: flex;
+  justify-content: space-around;
+  // flex-direction: column;
+}
+
+.selections {
+  display: flex;
+  // padding: 10px;
+  // flex-direction: row;
+  justify-content: space-between;
+}
+
+.selections li {
+  margin: 10px;
+  font-family: $sans-serif;
+}
+
+.selections a:hover {
+  cursor: pointer;
+  background-color: $lightest-gray;
+}
+
+.selections li:last-child {
+  text-decoration: underline;
+  text-transform: uppercase;
+}
