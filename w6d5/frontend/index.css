@@ -1,0 +1,56 @@
+section {
+  font-family: 'Questrial', sans-serif;
+  font-size: 32px;
+  color: #004d3d;
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(water.jpg);
+  padding: 10px;
+  border: 2px solid #538cc6;
+  margin-top: 20px;
+}
+
+div {
+  width: 100%;
+}
+
+input {
+  border: 2px solid purple;
+  width: 100%;
+}
+
+.name {
+  font-size: 18px;
+}
+
+.autocomplete {
+  width: 25%;
+  margin: 20px 0 20px 630px;
+}
+
+.date {
+  margin: 0 5px 5px 5px;
+}
+
+.time {
+  margin: 5px 5px 0 5px;
+}
+
+.city {
+  margin: 0 5px 5px 5px;
+}
+
+.temp {
+  margin: 5px 5px 0 5px;
+}
+
+.flx {
+  display: flex;
+}
+
+.flx-justify {
+  justify-content: space-between;
+}
