@@ -70,14 +70,19 @@ input {
   padding: 7px;
   width: 100%;
   text-align: center;
+  list-style: none;
+  background-image: url(water.jpg);
 }
 
 .tab-content {
   font-size: 18px;
-
+  height:100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .tab-titles:hover {
+  background-image: none;
   background-color: #538cc6;
   color: white;
   cursor: pointer;
