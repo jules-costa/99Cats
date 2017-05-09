@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import Clock from './clock';
 import Weather from './weather';
 import Autocomplete from './autocomplete';
+import Tabs from './tabs';
 
 class Widget extends React.Component {
 
@@ -12,7 +13,10 @@ class Widget extends React.Component {
       <div>
         <Clock />
         <Weather />
-        <Autocomplete names={['Jules', 'Kevin', 'Andrew', 'Corrine', 'Johnny', 'Krissy']} />
+        <div className="flx flx-justify small-box">
+          <Tabs tabs={[{ title: "one", content: "ONE!"}, { title: "two", content: "TWO!"}, { title: "three", content: "THREE!"}]} />
+          <Autocomplete names={['Jules', 'Kevin', 'Andrew', 'Corrine', 'Johnny', 'Krissy']} />
+        </div>
       </div>
     );
   }
