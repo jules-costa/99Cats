@@ -4,13 +4,13 @@ class Tabs extends React.Component {
   constructor(props) {
     super(props);
     this.state = { selectedIdx: 0 };
+    this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick(e) {
     e.preventDefault();
     this.setState({ selectedIdx: 0 });
 
-    //How to grab index from JS object on click???
   }
 
   render () {
@@ -18,7 +18,7 @@ class Tabs extends React.Component {
       <section className="flx flx-justify tabs">
         <ul className="flx flex-justify tab-headers">
         {
-          this.props.tabs.map((tab) => <li className="tab-titles" onClick={this.handleClick.bind(this)}>{tab.title}</li>)
+          this.props.tabs.map((tab) => <li className="tab-titles" onClick={this.handleClick}>{tab.title}</li>)
         }
         </ul>
         <div className="flx tab-content">
